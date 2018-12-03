@@ -6,8 +6,8 @@ MAINTAINER pge "gpshun@163.com"
 
 RUN apt-get update -y
 RUN apt-get install -y nginx
-RUN mkdir -p /var/www/emon
-ADD emon.conf /etc/nginx/conf.d/
+RUN mkdir -p /var/www/emontech
+ADD emontech.conf /etc/nginx/conf.d/
 ADD nginx.conf /etc/nginx/nginx.conf
 
 # Append "daemon off;" to the beginning of the configuration
